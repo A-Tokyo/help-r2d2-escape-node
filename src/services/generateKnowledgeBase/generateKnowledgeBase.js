@@ -15,20 +15,20 @@ const generatePredicates = (): string => {
   } = config;
   /** Append agent predicate */
   fileText += `agent(${playerPosition.col}, ${playerPosition.row}, s)\n`;
-  /** Append teleportal predicate */
-  fileText += `teleportal(${teleportalPosition.col}, ${
-    teleportalPosition.row
-  }, s)\n`;
-  /** Append obstacles predicates */
-  fileText += obstaclesPositions.reduce(
-    (predicates, position) =>
-      `${predicates}obstacle(${position.col}, ${position.col})\n`,
-    ''
-  );
   /** Append rocks predicates */
   fileText += rocksPositions.reduce(
     (predicates, position) =>
       `${predicates}rock(${position.col}, ${position.col}, s)\n`,
+    ''
+  );
+  /** Append teleportal predicate */
+  fileText += `teleportal(${teleportalPosition.col}, ${
+    teleportalPosition.row
+  })\n`;
+  /** Append obstacles predicates */
+  fileText += obstaclesPositions.reduce(
+    (predicates, position) =>
+      `${predicates}obstacle(${position.col}, ${position.col})\n`,
     ''
   );
   /** Append presurepads predicates */
