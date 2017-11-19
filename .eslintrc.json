@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/flowtype"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": false,
+    "jest": true
+  },
+  "plugins": [
+    "flowtype",
+    "prettier"
+  ],
+  "rules": {
+    "no-underscore-dangle": "off",
+    "no-console": ["error", { "allow": ["info", "warn", "error"] }]
+  }
+}
