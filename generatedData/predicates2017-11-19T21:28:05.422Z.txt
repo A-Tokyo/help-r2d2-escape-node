@@ -1,5 +1,0 @@
-agent(1, 1, s)
-teleportal(1, 2, s)
-obstacle(1, 1, s)
-rock(0, 0, s)
-pressurepad(2, 2, s)

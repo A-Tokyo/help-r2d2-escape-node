@@ -22,7 +22,7 @@ const generatePredicates = (): string => {
   /** Append obstacles predicates */
   fileText += obstaclesPositions.reduce(
     (predicates, position) =>
-      `${predicates}obstacle(${position.col}, ${position.col}, s)\n`,
+      `${predicates}obstacle(${position.col}, ${position.col})\n`,
     ''
   );
   /** Append rocks predicates */
@@ -34,7 +34,7 @@ const generatePredicates = (): string => {
   /** Append presurepads predicates */
   fileText += pressurePadsPositions.reduce(
     (predicates, position) =>
-      `${predicates}pressurepad(${position.col}, ${position.col}, s)\n`,
+      `${predicates}pressurepad(${position.col}, ${position.col})\n`,
     ''
   );
   return fileText;
