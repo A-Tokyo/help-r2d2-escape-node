@@ -45,7 +45,7 @@ export default () => {
   fs.writeFileSync(
     path.join(
       __dirname,
-      `../../../generatedData/predicates${new Date().toISOString()}.txt`
+      `../../../generatedData/predicates${new Date().toISOString()}.pl`
     ),
     generatedPredicates
   );
