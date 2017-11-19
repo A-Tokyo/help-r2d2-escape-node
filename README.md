@@ -1,4 +1,6 @@
-# help-r2d2-escape-node
+# help-r2d2-escape-node-node
+
+[![CircleCI](https://circleci.com/gh/A-Tokyo/help-r2-d2-escape-node.svg?style=shield)](https://circleci.com/gh/A-Tokyo/help-r2-d2-escape-node)
 
 ## Getting started
 - run `yarn` to install the dependencies.
