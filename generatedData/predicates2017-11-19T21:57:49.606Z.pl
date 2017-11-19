@@ -1,0 +1,5 @@
+agent(1, 0, s)
+rock(1, 1, s)
+teleportal(2, 0)
+obstacle(0, 0)
+pressurepad(2, 2)
